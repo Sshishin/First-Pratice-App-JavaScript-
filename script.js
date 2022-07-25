@@ -28,7 +28,7 @@ let personalMovieDB = {
 
 function rememberMyFilms() {
     for(let i = 1; i <= 2; i++) {
-        QuestOfWatch = prompt('Один из последних просмотренных фильмов','');
+        QuestOfWatch = prompt('Один из последних просмотренных фильмов','').trim(); //Метод trim после строки убирает все пробелы в начале и в конце строки
         RatingOfWatch = prompt('На сколько оцените его','');
     
            if(QuestOfWatch != '' && RatingOfWatch != '' && QuestOfWatch != null && RatingOfWatch != null && QuestOfWatch.length < 50) {
@@ -105,3 +105,6 @@ function writeYourGenres() {
 //  }
  
 //  writeYourGenres()
+
+
+
